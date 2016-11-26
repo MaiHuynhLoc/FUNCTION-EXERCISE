@@ -9,10 +9,6 @@ int n;
 cout<< "Nhap vao gia tri n: ";
 cin>>n;
 cout<< fibo(n);
-
-
-
-
 }
 int fibo (int n)
 {
