@@ -22,3 +22,57 @@ int fibo (int n)
  return f2;
 }
 -------------------------------------------------------------------------------------------------------------------------------------------
+SQUAREROOT EXERCISE
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+double squareroot (int );
+int main()
+{
+int n;
+do
+{
+ cout<< "Nhap vao n: ";
+ cin>>n;
+
+}while (n<0);
+cout<<"Can bac hai cua "<<n<<" la "<<squareroot(n);
+
+
+
+
+}
+double squareroot (int n)
+{
+  double k=sqrt(n);
+  return k;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------
+Căn bậc 2 nghĩa là chia số đó thành 2 dãy số bằng nhau
+--------------------------------------------------------------------------------------------------------------------------------------------
+PRINT PRIME SMALLER THAN N
+
+#include <iostream>
+using namespace std;
+bool prime (int );
+int main ()
+{
+int n;
+cout<< "Nhap vao n: ";
+cin>>n;
+for (int i=2;i<n;i++)
+if (prime(i))
+cout<<i<<"\n";
+}
+bool prime (int n)
+{
+    for (int i=2;i<n;i++)
+    {
+        if (n%i==0)
+            return 0;
+    }
+    return 1;
+
+}
+--------------------------------------------------------------------------------------------------------------------------------------------------------
