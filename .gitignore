@@ -76,3 +76,39 @@ bool prime (int n)
 
 }
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+SQUARE NUMBER EXCERCISE
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int squarenumber (int );
+int main()
+{
+    int n;
+cout << "Nhap vao n: ";
+cin>>n;
+for (int i=1;i<=sqrt(n);i++)
+{
+   if (squarenumber(i))
+   {
+       cout<<"So do la so chinh phuong";
+       break;
+
+   }else
+       {
+       cout<< "So do khong phai la so chinh phuong";
+       break;
+       }
+}
+
+}
+int squarenumber (int n)
+{
+    for (int i;i<sqrt(n);i++)
+    {
+        if (i*i==n)
+        return 1;
+    }
+
+}
+
