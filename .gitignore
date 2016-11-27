@@ -111,4 +111,33 @@ int squarenumber (int n)
     }
 
 }
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+AVERAGE EXERCISE
+
+#include <iostream>
+using namespace std;
+double diemtrungbinh(int ,int );
+int main()
+{
+char hoten[50];
+int a,b;
+
+
+    cout<< "Nhap ho ten : ";
+    cin>>hoten;
+    cout<< "Nhap vao diem toan: ";
+    cin>>a;
+    cout<< "Nhap vao diem van: ";
+    cin>>b;
+    cout<< "Diem trung binh cua "<<hoten<<" la: "<<diemtrungbinh(a,b);
+
+
+}
+double diemtrungbinh(int a,int b)
+{
+  double gt=(a+b)/2.0;
+
+  return gt;
+}
+
 
